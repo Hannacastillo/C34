@@ -80,7 +80,6 @@ rope1.display()
 
 function mouseDragged(){
 
-ball1.body.position.x=mouseX
-ball1.body.position.y=mouseY
+Matter.Body.setPosition(ball1.body,{x:mouseX,y:mouseY})
 
 }
